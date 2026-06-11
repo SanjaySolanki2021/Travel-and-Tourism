@@ -17,9 +17,9 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon --env-file=backend/.env backend/index.js",
-    "start": "node --env-file=backend/.env backend/index.js",
-    "build": "npm install && npm install --prefix client && npm run build --prefix client"
+    "dev": "node init && nodemon --env-file=backend/.env backend/index.js",
+    "start": "node init && node --env-file=backend/.env backend/index.js",
+    "build": "node init && npm install && npm install --prefix client && npm run build --prefix client"
   },
   "keywords": [],
   "author": "",
